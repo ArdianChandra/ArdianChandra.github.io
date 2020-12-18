@@ -26,6 +26,12 @@ table#table{
     margin-right: auto;
 }
 
+table#tableHistory{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .history{
     text-align: center;
     margin-left: 230px;
@@ -126,7 +132,7 @@ table#table{
 }
 
 .tambah:hover{
-    background-color: yellowgreen;
+    background-color: rgb(46, 116, 49);
     color: white;
 }
 
