@@ -12,11 +12,16 @@ function autoGenerate() {
     var cell4 = row.insertCell(3);
     var cell5 = row.insertCell(4);
     var cell6 = row.insertCell(5);
+    var today = new Date();
+    var tanggal = today.getDate();
+    var tanggal2 = today.getDate()+1;
+    var bulan = today.getMonth();
+    var tahun = today.getFullYear();
     
     cell1.innerHTML = "Tugas Harian";
     cell2.innerHTML = "Mengerjakan soal rocket dengan baik";
-    cell3.innerHTML = "Rabu, 16-12-2020";
-    cell4.innerHTML = "Jumat, 19-12-2020";
+    cell3.innerHTML = `${tahun}-${bulan}-${tanggal}`;
+    cell4.innerHTML =  `${tahun}-${bulan}-${tanggal2}`;
     cell5.innerHTML = '<button onclick="deleteRow(this)" class="done action"><img src="aset/done 32.ico" alt="icon"></img></button>';
     cell6.innerHTML = '<button onclick="deleteRow(this)" class="cancel action"><img src="aset/cancel-32.ico" alt="icon"></img></button>';
   }
