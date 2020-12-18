@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Taks List</title>
+    <link rel="icon" href="./aset/512x512.png" type="image/icon type">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1><b>My Task List</b></h1>
+
+    <div class="container">
+        <a href="history.html"><button class="history"> Task History</button></a>
+        <!-- <a href="form.html"><button class="add">Add New Task</button></a> -->
+        <button onclick="autoGenerate()" class="auto">Auto Generate</button>
+        <button onclick="yellowtheme()" class="yellowtheme">Yellow Theme</button>
+        <button onclick="bluetheme()" class="bluetheme">Blue Theme</button>
+
+    <table id="table">
+            <tr>
+                <th rowspan="2">Task<br>Name</th>
+                <th rowspan="2">Description</th>
+                <th colspan="2">Deadline</th>
+                <th rowspan="2" colspan="2">Action</th>
+            </tr>
+            <tr>
+                <th>From</th>
+                <th>To</th>
+            </tr>
+            <tr>
+                <td>Final Project</td>
+                <td>Membuat sebuah website sederhana menggunkan HTML, CSS, dan JS</td>
+                <td>2020-12-17</td>
+                <td>2020-12-18</td>
+                <td><button onclick="deleteRow(this)" class="done action"><img src="aset/done 32.ico" alt="icon"></button></td>
+                <td><button onclick="deleteRow(this)" class="cancel action"><img src="aset/cancel-32.ico" alt="icon"></button></td>
+            </tr>
+            <tr>
+                <td>Belajar HTML CSS</td>
+                <td>Mempelajari HTML dan CSS sehingga dapat mengerjakan soal dengan baik</td>
+                <td>2020-12-21</td>
+                <td>2020-12-25</td>
+                <td><button onclick="deleteRow(this)" class="done action"><img src="aset/done 32.ico" alt="icon"></button></td>
+                <td><button onclick="deleteRow(this)" class="cancel action"><img src="aset/cancel-32.ico" alt="icon"></button></td>
+            </tr>
+        </table>
+
+        <div class="form">
+            <label for="taskname">Task Name:</label><br>
+            <input type="text" id="taskname" placeholder="Task Name..." >
+            <br><br>
+            <label for="desc">Description:</label><br>
+            <textarea id="desc" name="desc" rows="10" cols="30" placeholder="Task Description..." ></textarea>
+            <br><br>
+            <label>Deadline:</label><br>
+            <label for="from">From</label>
+            <input type="date" name="from" id="from" >
+            
+            <label for="to">To</label>
+            <input type="date" name="to" id="to" >
+        
+            <br><br>
+            <button onclick="add()" id="buttonAdd" class="tambah">Add</button>
+            <button onclick="cancel()" id="buttonCancel" class="batal">Cancel</button>
+        </div>
+    </div>
+<br>  
+
+    <script src="script.js"></script>
+</body>
+</html>

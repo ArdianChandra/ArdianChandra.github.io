@@ -1,0 +1,52 @@
+<!-- kalo di task list udah di tandain "DONE" atau "CANCEL", masuk ke history / masih bingung -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My History List</title>
+    <link rel="icon" href="./aset/512x512.png" type="image/icon type">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1><b>My History List</b></h1>
+    <div class="container">
+        <a href="index.html"><button class="history">Back to List</button></a>
+        <table id="table">
+            <tr>
+                <th rowspan="2">No.</th>
+                <th rowspan="2">Taks</th>
+                <th rowspan="2">Description</th>
+                <th colspan="2">Deadline</th>
+                <th rowspan="2" colspan="2">Status</th>
+            </tr>
+            <tr>
+                <th>From</th>
+                <th>To</th>
+            </tr>
+            <tr>
+                <div class="data">
+                    <td>1.</td>
+                    <td>Tugas Harian</td>
+                    <td>Mengerjakan semua tugas yang diberikan oleh instructors</td>
+                    <td>2020-11-23</td>
+                    <td>2020-12-18</td>
+                    <td class="doneHistory">DONE</td>
+                </div>
+            </tr>
+            <tr>
+                <div class="data">
+                    <td>2.</td>
+                    <td>Tugas Harian 2</td>
+                    <td>Mengerjakan tugas yang diberikan oleh instructors</td>
+                    <td>2020-11-23</td>
+                    <td>2020-12-18</td>
+                    <td class="cancelHistory">CANCEL</td>
+                </div>
+            </tr>
+
+        </table>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
